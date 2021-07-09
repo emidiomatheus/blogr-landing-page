@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/blogr-responsive-landing-page-d4p5CxqVD](https://www.frontendmentor.io/solutions/blogr-responsive-landing-page-d4p5CxqVD)
-- Live Site URL: [https://github.com/emidiomatheus/blogr-landing-page](https://github.com/emidiomatheus/blogr-landing-page)
+- Live Site URL: [https://emidiomatheus.github.io/blogr-landing-page](https://github.com/emidiomatheus/blogr-landing-page)
 
 ## My process
 
