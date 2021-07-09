@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <script src="./js/jquery.js"></script>
+  
+</head>
+<body>
+  <section id="start">
+    <div id="light-red">
+      <header>
+          <div id="logo-menu">
+            <img src="./images/logo.svg" alt="Logo Blogr" id="logo">
+            <i><img src="./images/icon-hamburger.svg" alt="Open Menu" id="icon-menu"></i>
+          </div>
+
+            <nav id="container-menu" class="">
+              <ul id="menu">
+                <div>
+                  <li class="link">
+                    <span>
+                      Product 
+                      <i class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                      </i>
+                    </span>
+                  </li>
+                  <ul class="submenu">
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
+                </div>
+                <div>
+                  <li class="link">
+                    <span>
+                      Company 
+                      <i class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                      </i>
+                    </span>
+                  </li>
+                  <ul class="submenu">
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                  </ul>
+                </div>
+                <div>
+                  <li class="link">
+                    <span>
+                      Connect 
+                      <i class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+                      </i>
+                    </span>
+                  </li>
+                  <ul class="submenu">
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                </div>
+              </ul>
+
+              <hr>
+              
+              <a href="#" id="login">Login</a>
+              <a href="#" id="sign-up">Sign Up</a>
+
+            </nav>
+        </header>
+      <div id="headline">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div id="buttons">
+          <a id="start-free" href="#">Start for Free</a>
+          <a id="learn-more" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  
+
+    <h2>Designed for the future</h2>
+    <div class="section first-section">
+      <div class="bg-image editor"></div>
+      <!-- <picture>
+        <source media="(max-width: 800px)" srcset="./images/illustration-editor-mobile.svg" alt=type="image/svg">
+        <source media="(min-width: 800px)" srcset="./images/illustration-editor-desktop.svg" alt=type="image/svg">
+        <img class="illustration" id="editor" src="./images/illustration-editor-desktop.svg" alt="Illustration Laptop">
+      </picture> -->
+      <div class="text">
+        <h2>Introducing an extensible editor</h2>
+        <p>
+          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.
+        </p>
+        <h2>Robust content management</h2>
+        <p>
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="second">
+
+      <div class="vazio"></div>
+      <div id="dark-blue" class="section">
+        <img class="illustration" id="phones" src="./images/illustration-phones.svg" alt="Illustration Phones">
+        <div>
+          <h1>State of the Art Infrastructure</h1>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="bg-image laptop"></div>
+        <!-- <picture>
+          <source media="(max-width: 800px)" srcset="./images/illustration-laptop-mobile.svg" alt=type="image/svg">
+          <source media="(min-width: 800px)" srcset="./images/illustration-laptop-desktop.svg" alt=type="image/svg">
+          <img class="illustration" id="laptop" src="./images/illustration-laptop-desktop.svg" alt="Illustration Laptop">
+        </picture> -->
+        <div class="text">
+          <h2>Free, open, simple</h2>
+          <p>
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </p>
+          <h2>Powerful tooling</h2>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <img class="logo" src="./images/logo.svg" alt="Logo Blogr">
+    <nav>
+      <div class="column">
+        <span>Product</span>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <span>Company</span>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <span>Connect</span>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </footer>
+
+  <script src="./js/scripts.js"></script>
+  
+</body>
+</html>

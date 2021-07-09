@@ -1,0 +1,546 @@
+:root {
+    --light-red : hsl(356, 100%, 66%);            /* CTA text */
+    --very-light-red: hsl(355, 100%, 74%);        /* CTA hover background */
+    --very-dark-blue: hsl(208, 49%, 24%);         /* headings */
+    --white: hsl(0, 0%, 100%);                    /* text */ 
+    --grayish-blue: hsl(240, 2%, 79%);            /* footer text */ 
+    --very-dark-grayish-blue: hsl(207, 13%, 34%); /* body copy */
+    --very-dark-black-blue: hsl(240, 10%, 16%);   /* footer background */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    padding: 3rem 2rem
+}
+
+#logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+}
+
+#icon-menu {
+    cursor: pointer;
+}
+
+#container-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    background: #fff;
+    width: calc(100% - 4rem);
+    position: absolute;
+    top: 7.5rem;
+
+    box-shadow: 0 2rem 4rem -2rem var(--very-dark-grayish-blue);
+    border-radius: 4px;
+
+    text-align: center;
+    padding-bottom: 2rem;
+
+    animation: appear .5s;
+}
+
+#container-menu.active {
+    display: flex;
+}
+
+#container-menu #menu {
+    background: #fff;
+}
+
+#container-menu .submenu {
+    display: none;
+    width: 100%
+}
+
+#container-menu .submenu.active {
+    display: block;
+}
+
+#menu li {
+    margin-top: 10px;
+}
+
+#container-menu ul {
+    display: block;
+    background: hsla(240, 3%, 79%, 0.3);
+    list-style: none;
+    padding: 1rem;
+    width: 85%;
+    border-radius: 4px;
+
+    margin: 0 auto;
+
+    color: var(--very-dark-grayish-blue);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.link {
+    color: var(--very-dark-blue);
+}
+
+.arrow svg {
+    stroke: #FF7B86;
+}
+
+#container-menu li {
+    cursor: pointer;
+}
+
+#container-menu li:not(:last-child) {
+    margin-bottom: 10px
+}
+
+#container-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-menu a#login {
+    color: var(--very-dark-blue);
+    width: 8rem;
+    height: 3rem;
+}
+
+#container-menu a#sign-up {
+    color: #fff;
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    width: 8rem;
+    height: 3rem;
+}
+
+hr {
+    width: 85%;
+	border: 0px;
+    border-top: 0.2px solid hsla(240, 3%, 79%, 0.5);
+    margin-top: 1rem
+}
+
+#light-red {
+    background-image: url(../images/bg-pattern-intro.svg), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: 340%, 100%;
+    background-position: bottom -500px left 34%, center;
+    background-repeat: repeat-y;
+
+    border-radius: 0 0 0 6rem;
+
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+}
+
+#headline {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+section#start h1 {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2.2rem;    
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+header a {
+    padding: 1rem 1.6rem;
+}
+
+a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.section .bg-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+    width: 100%;
+    height: clamp(25rem, 40vw, 40rem);
+}
+
+.section .bg-image.editor{
+    background-image: url(../images/illustration-editor-mobile.svg);
+}
+
+.section .bg-image.laptop{
+    background-image: url(../images/illustration-laptop-mobile.svg);
+    
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+a#start-free, a#learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 3rem;
+}
+
+a#start-free {
+    color: var(--light-red);
+    background: white;
+    margin-right: 12px;
+}
+
+a#learn-more {
+    color: white;
+    border: 1px solid white;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.4rem;
+
+    width: 100%;
+}
+
+.text img {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--very-dark-blue);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text p {
+    color: var(--very-dark-grayish-blue);
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.vazio {
+    padding: 6rem 0;
+}
+
+div#dark-blue {
+    background-image: url(../images/bg-pattern-circles.svg), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-position: center top -16rem, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 0 6rem;
+
+    color: #fff;
+    text-align: center;
+
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+#dark-blue p {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+
+    padding: 1.8rem;
+}
+
+#phones {
+    width: 100%;
+    margin-top: -10rem;
+}
+
+#laptop {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+footer {
+    font-family: 'Ubuntu', sans-serif;
+    background: var(--very-dark-black-blue);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4rem 0;
+    border-radius: 0 8rem 0 0;
+
+    text-align: center;
+    color: var(--grayish-blue)
+}
+
+footer img {
+    margin-bottom: 5rem
+}
+
+footer span {
+    font-weight: 700;
+    color: #fff;
+}
+
+footer li {
+    margin-top: 12px;
+    list-style: none;
+}
+
+footer ul {
+    margin: 1.8rem 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* =============== Desktop =============== */
+@media(min-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        width: 100%;
+
+        padding: 2rem 6rem;
+        position: absolute;
+    }
+
+    header .link, 
+    a,
+    .submenu {
+        font-family: 'Ubuntu';
+    }
+
+    header .link, a#login {
+        opacity: .8;
+    }
+
+    header .link {
+        padding: 12px;
+        margin-right: 1.5rem;
+        color: #fff;
+    }
+
+    header .link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    #headline {
+        padding-top: 12rem;
+    }
+
+    .arrow svg {
+        stroke: #fff
+    }
+
+    #container-menu {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+
+        background: transparent;
+        box-shadow: none;
+
+        padding: 0;
+        margin: 0 5rem;
+    }
+
+    #container-menu #menu {
+        display: flex;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    #container-menu .submenu {
+        display: none;
+        position: absolute;
+        background: #fff;
+        text-align: left;
+        width: 10vw;
+
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #container-menu #menu div {
+        position: relative;
+    }
+
+    #container-menu ul.submenu {
+        font-weight: 300;
+        color: var(--very-dark-black-blue)
+    }
+    
+    #container-menu ul.submenu li:hover {
+        font-weight: 700;
+    }
+
+    #container-menu a#login {
+        color: #fff;
+    }
+    
+    #container-menu a#sign-up {
+        color: var(--light-red);
+        background: #fff;
+
+        transition: .3s;
+    }
+
+    a#start-free {
+        transition: .3s
+    }
+
+    #container-menu a#sign-up:hover,
+    a#start-free:hover {
+        background: var(--very-light-red);
+        color: #fff;
+    }
+
+    a#learn-more {
+        transition: .3s
+    }
+
+    a#learn-more:hover {
+        background: #fff;
+        color: var(--very-light-red)
+    }
+
+    .section {
+        display: flex;
+        padding: 0;
+        margin-bottom: 8rem;
+    }
+
+    .section p {
+        text-align: left;
+    }
+    
+    
+    #headline h1 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+    
+    #light-red {
+        background-image: url(../images/bg-pattern-intro.svg), linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        background-size: auto, 100%;
+        background-position: center left -30rem, center;
+    }
+
+    .text {
+        align-items: start;
+        padding: 0 5rem;
+    }
+    
+    .first-section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    div#dark-blue {
+        display: flex;
+        align-items: center;
+        height: 350px;
+
+        background-position: bottom -4rem left -12rem, center;
+        background-size: 70%, 100%;
+    }
+
+    #dark-blue div p{
+        margin: 0;
+        padding: 0
+    }
+
+    #phones {
+        margin-top: 0;
+        max-width: 600px;
+    }
+
+    .section .bg-image {
+        background-size: cover;
+        height: 800px;
+    }
+
+    .section .bg-image.editor{
+        background-image: url(../images/illustration-editor-desktop.svg);
+        background-position: center right -14rem;
+    }
+    
+    .section .bg-image.laptop{
+        background-image: url(../images/illustration-laptop-desktop.svg);
+        background-position: center left -20rem;
+    }
+
+    hr {
+        display: none
+    }
+
+    #icon-menu {
+        display: none
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template: auto;
+        align-items: flex-start;
+        justify-items: center;
+
+        text-align: left;
+    }
+
+    footer nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 2rem; */
+        width: 100%;
+    }
+
+    footer .logo {
+        margin: 0;
+    }
+
+    footer li {
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    footer li:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    .vazio {
+        padding: 0;
+    }
+}
